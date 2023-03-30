@@ -1,0 +1,18 @@
+{
+  "name": "s23wb88vattikuti",
+  "description": "This is a assignment is to become familiar with using pug templates to dynamically generate web pages on the server side.",
+  "version": "1.0.0",
+  "author": "Manohar Sri Vikram Vattikuti",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  }
+}
