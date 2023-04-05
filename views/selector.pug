@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  - var image_names = ["hat1.jpg", "hat2.jpg", "hat3.jpg", "hat4.jpg", "hat5.jpg"]
+
+  each i in [1, 2, 3]
+    - var index = Math.floor(Math.random() * 5)
+    - var image_name = image_names[index]
+    img(src=`/images/${image_name}`, alt=`${image_name} image`, height="200" width="200")
