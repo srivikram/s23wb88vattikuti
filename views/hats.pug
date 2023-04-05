@@ -5,9 +5,11 @@ block content
   p Welcome to #{title}
   .container-fluid
     .row
-      each item in [{ hat_type: "Baseball Cap", color: "Red", price: 12.99 }, { hat_type: "Fedora", color: "Black", price: 29.99 }, { hat_type: "Beanie", color: "Blue", price: 9.99 }]
+      each item, index in [{ hat_type: "Baseball Cap", color: "Red", price: 12.99 }, { hat_type: "Fedora", color: "Black", price: 29.99 }, { hat_type: "Beanie", color: "Blue", price: 9.99 }]
         .col-sm-2
           h2= item.hat_type
           p Color: #{item.color}
           p Price: $#{item.price.toFixed(2)}
+          button(onclick=`buy(${index})`) Buy
+  br
   a(href="/hats") View all Hats
