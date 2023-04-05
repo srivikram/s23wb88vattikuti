@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  h2 Your grid:
+  table
+    tbody
+      each row in data
+        tr
+          each col in row
+            td= col
